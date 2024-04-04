@@ -1,5 +1,6 @@
 import './App.css'
-
+import Navbar from './Navbar';
+import Home from './Home';
 function App() {
 
   const title = 'Welcome'
@@ -8,12 +9,11 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
       <div className="content">
-        <h1>App Component</h1>
+        <Home />
         <h1>{title}</h1>
         <p>Liked {likes} times</p>
-        {/* <p>{person}</p> */}
-        {/* Can't output object */}
       </div>
     </div>
   );
