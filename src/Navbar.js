@@ -7,8 +7,8 @@ const Navbar = () => {
                 <h1>The aKuma Blog</h1>
                 <div className="links">
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/create">New Blog</a></li>
+                        <a href="/">Home</a>
+                        <a href="/create">New Blog</a>
                     </ul>
 
                 </div>
