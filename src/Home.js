@@ -23,7 +23,10 @@ const Home = () => {
     ])
 
     return (
-        <div><BlogList blogs={blogs} title="All Blogs" />
+        <div>
+            <BlogList blogs={blogs} title="All Blogs" />
+            <BlogList blogs={blogs.filter((blog) => blog.author === 'mario')}
+                title="Mario's Blogs" />
             {/* <h1>HomePage</h1>
             <p>{name} is {age} years old.</p>
             <button onClick={handleClick}>Click me</button> */}
