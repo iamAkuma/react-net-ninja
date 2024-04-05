@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import { useState } from 'react'
+import BlogList from './BlogList'
 
 const Home = () => {
     // const [name, setName] = useState('mario')
@@ -21,16 +23,7 @@ const Home = () => {
     ])
 
     return (
-        <div>
-            <div className="home">
-                {blogs.map((blog) => (
-                    <div className="blog-preview" key={blog.id}>
-                        <h2>{blog.title}</h2>
-                        <p>Written by {blog.author}</p>
-
-                    </div>
-                ))}
-            </div>
+        <div><BlogList blogs={blogs} />
             {/* <h1>HomePage</h1>
             <p>{name} is {age} years old.</p>
             <button onClick={handleClick}>Click me</button> */}
