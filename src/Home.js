@@ -23,7 +23,7 @@ const Home = () => {
     ])
 
     return (
-        <div><BlogList blogs={blogs} />
+        <div><BlogList blogs={blogs} title="All Blogs" />
             {/* <h1>HomePage</h1>
             <p>{name} is {age} years old.</p>
             <button onClick={handleClick}>Click me</button> */}
