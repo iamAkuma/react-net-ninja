@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <div>
             <nav className='navbar'>
-                <h1>The aKuma Blog</h1>
+                <h1><a href="/">The aKuma Blog</a></h1>
                 <div className="links">
                     <ul>
                         <a href="/">Home</a>
