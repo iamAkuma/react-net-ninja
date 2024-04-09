@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const Navbar = () => {
     return (
         <div>
@@ -7,12 +7,12 @@ const Navbar = () => {
                 <h1><a href="/">The aKuma Blog</a></h1>
                 <div className="links">
                     <ul>
-                        <a href="/">Home</a>
-                        <a href="/create" style={{
+                        <Link to="/">Home</Link>
+                        <Link to="/create" style={{
                             color: "white",
                             backgroundColor: "#f1356d",
                             borderRadius: '8px'
-                        }}>New Blog</a>
+                        }}>New Blog</Link>
                     </ul>
 
                 </div>
